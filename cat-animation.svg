@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+  <style>
+    .cat-black {
+      font-size: 70px;
+      animation: walk 5s linear infinite;
+    }
+    .cat-white {
+      font-size: 70px;
+      animation: walk 10s linear infinite;
+    }
+    
+    @keyframes walk {
+      from { transform: translateX(300px); }
+      to { transform: translateX(0); }
+    }
+    
+    @keyframes bounce {
+      0% { transform: translateY(0) translateX(var(--x, 0)); }
+      0% { transform: translateY(0) translateX(var(--x, 0)); }
+    }
+  </style>
+  
+  <text x="20" y="80" class="cat-black">🐈‍⬛</text>
+  <text x="20" y="80" class="cat-white">🐈</text>
+</svg>
